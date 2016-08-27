@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>勤创报名表</title>
+
+    <!--buttons-->
+    <link rel="stylesheet" href="css/buttons.css">
+
+    <!--jquery-->
+    <script src="http://cdn.bootcss.com/jquery/3.1.0/jquery.min.js"></script>
+
+    <!--font awesome-->
+    <link href="http://cdn.bootcss.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet">
+
+    <!--bootstrap-->
+    <link href="http://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+    <script src="http://cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+    <!--icheck-->
+    <script src="http://cdn.bootcss.com/iCheck/1.0.2/icheck.min.js"></script>
+    <link href="http://cdn.bootcss.com/iCheck/1.0.2/skins/square/grey.css" rel="stylesheet">
+
+    <link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
+</head>
+<style>
+    .main:before{
+        top:-4%;
+    }
+</style>
+
+<!--todo xxx的地方需要自行替换掉-->
+
+<body style="background:#927057;">
+<div class="figure">
+    <img src="img/logo.svg" style="background-color: #ffffff"/>
+    <div class="main" style="box-sizing: content-box;">
+        <div class="head">
+            <h1>勤创报名表</h1>
+        </div>
+        <form id="form_signup">
+            <h4>个人信息</h4><hr>
+            <div class="input_form wrapper" style="margin-top: 0">
+                <span><i class="fa fa-user"></i></span>
+                <input name="name" type="text" placeholder="姓名" required>
+            </div>
+            <div class="wrapper" style="text-align: left">
+                <label style="width: 20%;">性别</label>
+                <input class="icheck" type="radio" name="gender" value="male" id="male"><label style="display: inline-block;" for="male">&nbsp;男生</label>
+                <input class="icheck" type="radio" name="gender" value="female" id="female"><label style="display: inline-block;" for="female">&nbsp;女生</label>
+            </div>
+            <div class="input_form wrapper">
+                <span><i class="fa fa-credit-card"></i></span>
+                <input name="xxx" type="text" placeholder="学号" required>
+            </div>
+            <div class="input_form wrapper">
+                <span><i class="fa fa-gears"></i></span>
+                <input name="xxx" type="text" placeholder="大类" required>
+            </div>
+            <div class="input_form wrapper">
+                <span><i class="fa fa-group"></i></span>
+                <input name="xxx" type="text" placeholder="行政班级" required>
+            </div>
+            <div class="input_form wrapper">
+                <span><i class="fa fa-birthday-cake"></i></span>
+                <input name="xxx" type="date" placeholder="生日" required>
+            </div>
+            <div class="input_form wrapper">
+                <span><i class="fa fa-home"></i></span>
+                <input name="xxx" type="text" placeholder="家乡" required>
+            </div>
+            <div class="input_form wrapper">
+                <span><i class="fa fa-heart"></i></span>
+                <input name="xxx" type="text" placeholder="兴趣爱好" required>
+            </div>
+            <div class="input_form wrapper">
+                <span><i class="fa fa-picture-o"></i></span>
+                <a href="#" id="photo_upload">上传照片<input type="file" style="width: 0;height: 0;left:53px;top:10px"></a>
+            </div>
+            <h4 style="margin-top: 40px">联系方式</h4><hr>
+            <div class="input_form wrapper" style="margin-top: 0">
+                <span><i class="fa fa-building"></i></span>
+                <input name="xxx" type="text" placeholder="寝室地址" required>
+            </div>
+            <div class="input_form wrapper">
+                <span><i class="fa fa-phone"></i></span>
+                <input name="xxx" type="number" placeholder="手机号码" required>
+            </div>
+            <div class="input_form wrapper">
+                <span><i class="fa fa-phone"></i></span>
+                <input name="xxx" type="number" placeholder="短号" required>
+            </div>
+            <div class="input_form wrapper">
+                <span><i class="fa fa-envelope"></i></span>
+                <input name="email" type="email" placeholder="邮箱">
+            </div>
+            <div class="input_form wrapper">
+                <span><i class="fa fa-qq"></i></span>
+                <input name="xxx" type="number" placeholder="QQ" required>
+            </div>
+            <h4 style="margin-top: 40px">报名</h4><hr>
+            <div class="wrapper" style="text-align: left;margin-top: 0">
+                <label>请选择有意向加入的部门<small>&nbsp;&nbsp;&nbsp;(最多选择2个)</small></label><br>
+                <label style="display: inline-block;" for="xxx"><input class="icheck" type="checkbox" name="department" value="male" id="xxx">&nbsp;办公室</label>
+                <label style="display: inline-block;" for="xxx"><input class="icheck" type="checkbox" name="department" value="male" id="xxx">&nbsp;创业实践指导部</label>
+                <label style="display: inline-block;" for="xxx"><input class="icheck" type="checkbox" name="department" value="male" id="xxx">&nbsp;对外拓展部</label>
+                <label style="display: inline-block;" for="xxx"><input class="icheck" type="checkbox" name="department" value="male" id="xxx">&nbsp;技术推广部</label>
+                <label style="display: inline-block;" for="xxx"><input class="icheck" type="checkbox" name="department" value="male" id="xxx">&nbsp;兼职管理部</label>
+                <label style="display: inline-block;" for="xxx"><input class="icheck" type="checkbox" name="department" value="male" id="xxx">&nbsp;人力资源部</label>
+                <label style="display: inline-block;" for="xxx"><input class="icheck" type="checkbox" name="department" value="male" id="xxx">&nbsp;素能创业强化部</label>
+            </div>
+            <div class="wrapper">
+                <label for="introduction" style="text-align: left;width: 100%;">个人简历<br><small>（包括学校工作经历、社会活动经历、获奖信息等，请务必注明时间）</small></label>
+                <textarea id="introduction" style="height: 20em;"></textarea>
+            </div>
+            <div class="wrapper" style="text-align: left;margin-top: 0">
+                <label>如果你具备以下特长，请选择相应的项目，便于我们更深入的了解你。</label><br>
+                <label style="display: inline-block;" for="xxx"><input class="icheck" type="checkbox" name="adventange" value="male" id="xxx">&nbsp;摄影摄像</label><br>
+                <label style="display: inline-block;" for="xxx"><input class="icheck" type="checkbox" name="adventange" value="male" id="xxx">&nbsp;网页设计</label><br>
+                <label style="display: inline-block;" for="xxx"><input class="icheck" type="checkbox" name="adventange" value="male" id="xxx">&nbsp;编程基础</label><br>
+                <label style="display: inline-block;" for="xxx"><input class="icheck" type="checkbox" name="adventange" value="male" id="xxx">&nbsp;PPT制作</label><br>
+                <label style="display: inline-block;" for="xxx"><input class="icheck" type="checkbox" name="adventange" value="male" id="xxx">&nbsp;绘画能力</label><br>
+                <label style="display: inline-block;" for="xxx"><input class="icheck" type="checkbox" name="adventange" value="male" id="xxx">&nbsp;写作能力</label><br>
+                <label style="display: inline-block;" for="xxx"><input class="icheck" type="checkbox" name="adventange" value="male" id="xxx">&nbsp;视频制作剪辑</label><br>
+                <label style="display: inline-block;" for="xxx"><input class="icheck" type="checkbox" name="adventange" value="male" id="xxx">&nbsp;Photoshop运用</label><br>
+                <label style="display: inline-block;" for="xxx"><input class="icheck" type="checkbox" name="adventange" value="male" id="xxx">&nbsp;其他</label>
+                <input type="text" style="background:#d5c395;border:solid #EFE1C4;border-width:0 0 1px 0;">
+            </div><br>
+            <div class="wrapper"style="text-align:left;margin-top: 0">
+                <label style="display: inline-block;" for="xxx">团队领导能力</label><br>
+                <div class="input_form">
+                    <input type="range" min="1" max="5" step="1" id="leader">
+                </div>
+            </div>
+            <div class="wrapper"style="text-align:left;margin-top: 0">
+                <label style="display: inline-block;" for="xxx">沟通交流能力</label><br>
+                <div class="input_form">
+                    <input type="range" min="1" max="5" step="1" id="comunication">
+                </div>
+            </div>
+            <div class="wrapper"style="text-align:left;margin-top: 0">
+                <label style="display: inline-block;" for="xxx">创新思维能力</label><br>
+                <div class="input_form">
+                    <input type="range" min="1" max="5" step="1" id="original">
+                </div>
+            </div>
+            <div class="wrapper"style="text-align:left;margin-top: 0">
+                <label style="display: inline-block;" for="xxx">寻求帮助能力</label><br>
+                <div class="input_form">
+                    <input type="range" min="1" max="5" step="1" id="seek help">
+                </div>
+            </div>
+            <div class="wrapper"style="text-align:left;margin-top: 0">
+                <label style="display: inline-block;" for="xxx">任务执行能力</label><br>
+                <div class="input_form">
+                    <input type="range" min="1" max="5" step="1" id="ability">
+                </div>
+            </div>
+            <div class="wrapper" style="text-align: left;margin-top: 0">
+                <label>在下列题目中选择你所选部门的题目作答</label><br>
+                <p>技术推广部：请你评价一下至今为止你自己最满意的一次经历？</p>
+                <p>对外拓展部：说说你对领导力的理解?</p>
+                <p>人力资源部：如何在学生组织中较为有效的实现绩效管?</p>
+                <p>兼职管理部:身为负责人，如何解决成员懒散拖拉问题?</p>
+                <p>素能创业强化部：你的搭档以学习任务重为由，拒绝参加工作，请你用简短的话说服他?</p>
+                <p>办公室：你希望与什么样的上（同）级共事?</p>
+                <p>创业实践指导部：你希望从一场创业类型活动中获得什么？</p>
+            </div>
+            <div class="wrapper">
+                <textarea id="answer" style="height: 20em;"></textarea>
+            </div>
+            <div class="wrapper">
+                <label for="introduction" style="text-align: left;width: 100%;">你认为你在一个团队中的角色是怎样的？请举出实例来证明你在团队中的定位。<br></label>
+                <textarea id="introduction" style="height: 20em;"></textarea>
+            </div>
+            <button class="button button-3d button-rounded button-brown" style="width: 90%;margin-top: 24px">立即报名</button>
+        </form>
+    </div>
+
+    <div class="footer" style="margin-bottom: 30px">
+        <p>&copy 2016 XXX. All rights reserved.&nbsp;</p>
+    </div>
+
+</div>
+
+
+<script>
+    $(document).ready(function(){
+        $('.icheck').iCheck({
+            checkboxClass: 'icheckbox_square-grey',
+            radioClass: 'iradio_square-grey',
+            increaseArea: '20%' // optional
+        });
+    });
+</script>
+</body>
+</html>
