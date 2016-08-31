@@ -3,7 +3,7 @@
         {
           var MAXWIDTH  = 260; 
           var MAXHEIGHT = 180;
-          var div = document.getElementById('preview');
+          var div = document.getElementById('imghead');
           if (file.files && file.files[0])
           {
               div.innerHTML ='<img id=imghead>';
