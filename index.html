@@ -25,6 +25,9 @@
     <!--script-->
     <script src="js/script.js"></script>
     <link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
+
+    <!-- 照片上传 js -->
+    <script src='js/photo-upload.js'></script>
 </head>
 <style>
     .main:before{
@@ -34,7 +37,7 @@
 
 <!--todo xxx的地方需要自行替换掉-->
 
-<body style="background-image: url(img/timg.jpg);background-repeat:no-repeat;background-size: 100% 100%">
+<body style="background-image: url(img/timg.jpg);">
 <div class="figure">
     <img src="img/logo.jpg" style="background-color: #ffffff"/>
     <div class="main" style="box-sizing: content-box;">
@@ -54,44 +57,44 @@
             </div>
             <div class="input_form wrapper">
                 <span><i class="fa fa-credit-card"></i></span>
-                <input name="xxx" type="text" placeholder="学号" required>
+                <input name="number" type="text" placeholder="学号" required>
             </div>
             <div class="input_form wrapper">
                 <span><i class="fa fa-gears"></i></span>
-                <input name="xxx" type="text" placeholder="大类" required>
+                <input name="major" type="text" placeholder="大类" required>
             </div>
             <div class="input_form wrapper">
                 <span><i class="fa fa-group"></i></span>
-                <input name="xxx" type="text" placeholder="行政班级" required>
+                <input name="study-class" type="text" placeholder="行政班级" required>
             </div>
             <div class="input_form wrapper">
                 <span><i class="fa fa-birthday-cake"></i></span>
-                <input name="xxx" type="date" placeholder="生日" required>
+                <input name="birth" type="text" placeholder="生日" required>
             </div>
             <div class="input_form wrapper">
                 <span><i class="fa fa-home"></i></span>
-                <input name="xxx" type="text" placeholder="家乡" required>
+                <input name="hometown" type="text" placeholder="家乡" required>
             </div>
             <div class="input_form wrapper">
                 <span><i class="fa fa-heart"></i></span>
-                <input name="xxx" type="text" placeholder="兴趣爱好" required>
+                <input name="hobby" type="text" placeholder="兴趣爱好" required>
             </div>
             <div class="input_form wrapper">
                 <span><i class="fa fa-picture-o"></i></span>
-                <a href="#" id="photo_upload">上传照片<input type="file" style="width: 0;height: 0;left:53px;top:10px"></a>
+                <a href="#" id="photo_upload">上传照片<input type="file" style="width: 0;height: 0;left:53px;top:10px" onchange="previewImage(this)"></a>
             </div>
             <h4 style="margin-top: 40px">联系方式</h4><hr>
             <div class="input_form wrapper" style="margin-top: 0">
                 <span><i class="fa fa-building"></i></span>
-                <input name="xxx" type="text" placeholder="寝室地址" required>
+                <input name="dorm_address" type="text" placeholder="寝室地址" required>
             </div>
             <div class="input_form wrapper">
                 <span><i class="fa fa-phone"></i></span>
-                <input name="xxx" type="number" placeholder="手机号码" required>
+                <input name="phone_number" type="number" placeholder="手机号码" required>
             </div>
             <div class="input_form wrapper">
                 <span><i class="fa fa-phone"></i></span>
-                <input name="xxx" type="number" placeholder="短号" required>
+                <input name="short_number" type="number" placeholder="短号" required>
             </div>
             <div class="input_form wrapper">
                 <span><i class="fa fa-envelope"></i></span>
@@ -104,13 +107,13 @@
             <h4 style="margin-top: 40px">报名</h4><hr>
             <div class="wrapper" style="text-align: left;margin-top: 0">
                 <label>请选择有意向加入的部门<small>&nbsp;&nbsp;&nbsp;(最多选择2个)</small></label><br>
-                <label style="display: inline-block;" for="xxx"><input class="icheck" type="checkbox" name="department" value="male" id="xxx">&nbsp;办公室</label>
-                <label style="display: inline-block;" for="xxx"><input class="icheck" type="checkbox" name="department" value="male" id="xxx">&nbsp;创业实践指导部</label>
-                <label style="display: inline-block;" for="xxx"><input class="icheck" type="checkbox" name="department" value="male" id="xxx">&nbsp;对外拓展部</label>
-                <label style="display: inline-block;" for="xxx"><input class="icheck" type="checkbox" name="department" value="male" id="xxx">&nbsp;技术推广部</label>
-                <label style="display: inline-block;" for="xxx"><input class="icheck" type="checkbox" name="department" value="male" id="xxx">&nbsp;兼职管理部</label>
-                <label style="display: inline-block;" for="xxx"><input class="icheck" type="checkbox" name="department" value="male" id="xxx">&nbsp;人力资源部</label>
-                <label style="display: inline-block;" for="xxx"><input class="icheck" type="checkbox" name="department" value="male" id="xxx">&nbsp;素能创业强化部</label>
+                <label style="display: inline-block;" for="bgs"><input class="icheck" type="checkbox" name="department" value="male" id="bgs">&nbsp;办公室</label>
+                <label style="display: inline-block;" for="cysjzd"><input class="icheck" type="checkbox" name="department" value="male" id="cysjzd">&nbsp;创业实践指导部</label>
+                <label style="display: inline-block;" for="dwtz"><input class="icheck" type="checkbox" name="department" value="male" id="dwtz">&nbsp;对外拓展部</label>
+                <label style="display: inline-block;" for="jstg"><input class="icheck" type="checkbox" name="department" value="male" id="jstg">&nbsp;技术推广部</label>
+                <label style="display: inline-block;" for="jzgl"><input class="icheck" type="checkbox" name="department" value="male" id="jzgl">&nbsp;兼职管理部</label>
+                <label style="display: inline-block;" for="rlzy"><input class="icheck" type="checkbox" name="department" value="male" id="rlzy">&nbsp;人力资源部</label>
+                <label style="display: inline-block;" for="sncy"><input class="icheck" type="checkbox" name="department" value="male" id="sncy">&nbsp;素能创业强化部</label>
             </div>
             <div class="wrapper">
                 <label for="introduction" style="text-align: left;width: 100%;">个人简历<br><small>（包括学校工作经历、社会活动经历、获奖信息等，请务必注明时间）</small></label>
@@ -119,14 +122,14 @@
             <div class="wrapper" style="text-align: left;margin-top: 0">
                 <label>如果你具备以下特长，请选择相应的项目，便于我们更深入的了解你。</label><br>
                 <label style="float: inherit;display: inline-block;" for="xxx"><input class="icheck" type="checkbox" name="adventange" value="male" id="xxx">&nbsp;摄影摄像</label>
-                <label style="display: inline-block;" for="xxx"><input class="icheck" type="checkbox" name="adventange" value="male" id="xxx">&nbsp;网页设计</label>
-                <label style="display: inline-block;" for="xxx"><input class="icheck" type="checkbox" name="adventange" value="male" id="xxx">&nbsp;编程基础</label>
-                <label style="display: inline-block;" for="xxx"><input class="icheck" type="checkbox" name="adventange" value="male" id="xxx">&nbsp;PPT制作</label>
-                <label style="display: inline-block;" for="xxx"><input class="icheck" type="checkbox" name="adventange" value="male" id="xxx">&nbsp;绘画能力</label>
-                <label style="display: inline-block;" for="xxx"><input class="icheck" type="checkbox" name="adventange" value="male" id="xxx">&nbsp;写作能力</label>
-                <label style="display: inline-block;" for="xxx"><input class="icheck" type="checkbox" name="adventange" value="male" id="xxx">&nbsp;视频制作剪辑</label>
-                <label style="display: inline-block;" for="xxx"><input class="icheck" type="checkbox" name="adventange" value="male" id="xxx">&nbsp;Photoshop运用</label>
-                <label style="display: inline-block;" for="xxx"><input class="icheck" type="checkbox" name="adventange" value="male" id="xxx">&nbsp;其他</label>
+                <label style="display: inline-block;" for="wysj"><input class="icheck" type="checkbox" name="adventange" value="male" id="wysj">&nbsp;网页设计</label>
+                <label style="display: inline-block;" for="bcjc"><input class="icheck" type="checkbox" name="adventange" value="male" id="bcjc">&nbsp;编程基础</label>
+                <label style="display: inline-block;" for="ppt"><input class="icheck" type="checkbox" name="adventange" value="male" id="ppt">&nbsp;PPT制作</label>
+                <label style="display: inline-block;" for="hhnl"><input class="icheck" type="checkbox" name="adventange" value="male" id="hhnl">&nbsp;绘画能力</label>
+                <label style="display: inline-block;" for="xznl"><input class="icheck" type="checkbox" name="adventange" value="male" id="xznl">&nbsp;写作能力</label>
+                <label style="display: inline-block;" for="spzz"><input class="icheck" type="checkbox" name="adventange" value="male" id="spzz">&nbsp;视频制作剪辑</label>
+                <label style="display: inline-block;" for="psyy"><input class="icheck" type="checkbox" name="adventange" value="male" id="psyy">&nbsp;Photoshop运用</label>
+                <label style="display: inline-block;" for="qt"><input class="icheck" type="checkbox" name="adventange" value="male" id="qt">&nbsp;其他</label>
                 <input type="text" style="background:#ecf0f4;border:solid #EFE1C4;border-width:0 0 1px 0;">
             </div><br>
             <div class="wrapper"style="text-align:left;margin-top: 0">

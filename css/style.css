@@ -73,7 +73,7 @@ body{
 .input_form{
     position: relative;
     display: inline-block;
-    color: #b2c8d6
+    color: #3b4d57;
 }
 .input_form span{
     position: absolute;
@@ -231,6 +231,7 @@ textarea{
     width: 100%;
     font-size: 1.1em;
     border-radius: 5px;
+    resize: none;
 }
 
 .footer{
