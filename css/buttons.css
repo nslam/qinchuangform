@@ -338,8 +338,8 @@
 
 .button-brown,
 .button-brown-flat {
-  background-color: #927057;
-  border-color: #927057;
+  background-color: #cbd4d9;
+  border-color: #cbd4d9;
   color: #FFF; }
   .button-brown:visited,
   .button-brown-flat:visited {
@@ -347,8 +347,8 @@
   .button-brown:hover, .button-brown:focus,
   .button-brown-flat:hover,
   .button-brown-flat:focus {
-    background-color: #ab8a71;
-    border-color: #ab8a71;
+    background-color: #509dcb;
+    border-color: #509dcb;
     color: #FFF; }
   .button-brown:active, .button-brown.active, .button-brown.is-active,
   .button-brown-flat:active,
@@ -901,9 +901,9 @@
   .button-3d.button-royal:active, .button-3d.button-royal.active, .button-3d.button-royal.is-active {
     box-shadow: 0 2px 0 #2f21d4, 0 3px 3px rgba(0, 0, 0, 0.2); }
 .button-3d.button-brown {
-  box-shadow: 0 7px 0 #725744, 0 8px 3px rgba(0, 0, 0, 0.3); }
+  box-shadow: 0 7px 0 #ecf0f4, 0 8px 3px rgba(0, 0, 0, 0.3); }
   .button-3d.button-brown:hover, .button-3d.button-brown:focus {
-    box-shadow: 0 7px 0 #6c5340, 0 8px 3px rgba(0, 0, 0, 0.3); }
+    box-shadow: 0 7px 0 #82b4d1, 0 8px 3px rgba(0, 0, 0, 0.3); }
   .button-3d.button-brown:active, .button-3d.button-brown.active, .button-3d.button-brown.is-active {
     box-shadow: 0 2px 0 #523f31, 0 3px 3px rgba(0, 0, 0, 0.2); }
 

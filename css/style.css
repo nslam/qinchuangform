@@ -1,6 +1,6 @@
 body{
     font-family: 'Microsoft YaHei UI Light','Microsoft YaHei Light','Microsoft YaHei','sans-serif'!important;
-    background: #d5c395;
+    background: #ecf0f4;
 }
 
 .container{
@@ -9,7 +9,7 @@ body{
 }
 
 #header-wrapper{
-    position: fixed;height: 48px;width: 100%;background:#927057;color: #fff;box-shadow: 0 5px 3px #837068;z-index: 100;top:0;
+    position: fixed;height: 48px;width: 100%;background:#93a0a7;color: #fff;box-shadow: 0 5px 3px #837068;z-index: 100;top:0;
 }
 #header{
     max-width:800px;margin:0 auto;
@@ -18,7 +18,7 @@ body{
     float: right;margin-top: 6px;margin-right:5px;padding: 0 12px;
 }
 #header #right-button:hover,#header #right-button:focus{
-    color: #927057;
+    color: #93a0a7;
 }
 #header #logo{
     color: #fff1d1;
@@ -37,7 +37,7 @@ body{
     width: 30%;
     margin: 3em auto 0;
     padding: 4em 4em 5em;
-    background: #d5c395;
+    background: #ecf0f4;
     position:relative;
 }
 .main:before{
@@ -54,7 +54,7 @@ body{
     margin:0 0 3em;
 }
 .head h1{
-    color:#fff;
+    color:black;
     text-align:center;
     font-size:2em;
     margin:0;
@@ -64,16 +64,16 @@ body{
     margin:4em auto;
 }
 .figure img {
-    width: 7%;
+    width: 10%;
     margin: 0 auto;
-    border: 5px solid #d5c395;
+    border: 5px solid #e3e7ed;
 }
 
 
 .input_form{
     position: relative;
     display: inline-block;
-    color: #927057;
+    color: #b2c8d6
 }
 .input_form span{
     position: absolute;
@@ -87,7 +87,7 @@ body{
 .input_form input[type="text"],.input_form input[type="password"],.input_form input[type="email"],.input_form input[type="date"],.input_form input[type="number"]{
     outline: none;
     border: none;
-    background: #efe1c4;
+    background: #f2f7fa;
     padding: 10px 10px 10px 60px;
     width: 100%;
     font-size: 1.1em;
@@ -102,7 +102,7 @@ body{
 {
     outline: none;
     border: none;
-    background: #efe1c4;
+    background: #f2f7fa;
     padding: 10px 10px 10px 60px;
     width: 100%;
     font-size: 1.1em;
@@ -147,7 +147,7 @@ a input[type="file"]
 
     outline: none;
     border: none;
-    background: #efe1c4;
+    background: #f2f7fa;
     padding: 10px 10px 10px 60px;
     width: 100%;
     font-size: 1.1em;
@@ -201,15 +201,15 @@ input[type="range"]::-webkit-slider-thumb {
     background: #fff;
     border-radius: 15px;
     cursor: pointer;
-    border: 4px solid #927057;
+    border: 4px solid #93a0a7;
 }
 input[type="range"]::-webkit-slider-thumb:hover {
-    background: #efe1c4;
-    border-color: #927057;
+    background: #f2f7fa;
+    border-color: #93a0a7;
 }
 #photo_upload:hover
 {
-    color: #927057;
+    color: #93a0a7;
     text-decoration: none;
 }
 .numberbox{
@@ -220,13 +220,13 @@ input[type="range"]::-webkit-slider-thumb:hover {
     margin-top:-10px!important;
     margin-left:10px!important;
     font-size:30px!important;
-    color:black!important;
+    color:#70818b;
     padding: 0px!important;
 }
 textarea{
     outline: none;
     border: none;
-    background: #efe1c4;
+    background: #f2f7fa;
     padding: 10px 10px 10px 10px;
     width: 100%;
     font-size: 1.1em;
@@ -239,14 +239,14 @@ textarea{
 }
 .footer p{
     font-size: 10px;
-    color:#EFE1C4;
+    color:#f2f7fa;
     margin:0;
 }
 a{
     color:#fff;
 }
 a:hover{
-    color:#EFE1C4;
+    color:#f2f7fa;
 }
 /*-- start-responsive-design --*/
 @media (max-width:1280px){
@@ -295,7 +295,7 @@ a:hover{
 @media (max-width:568px){
     .figure img {
         width: 20%;
-        border: 3px solid #d5c395;
+        border: 3px solid #ecf0f4;
     }
     .main {
         width: 68%;

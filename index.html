@@ -22,6 +22,8 @@
     <script src="http://cdn.bootcss.com/iCheck/1.0.2/icheck.min.js"></script>
     <link href="http://cdn.bootcss.com/iCheck/1.0.2/skins/square/grey.css" rel="stylesheet">
 
+    <!--script-->
+    <script src="js/script.js"></script>
     <link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
 </head>
 <style>
@@ -32,9 +34,9 @@
 
 <!--todo xxx的地方需要自行替换掉-->
 
-<body style="background:#927057;">
+<body style="background-image: url(img/timg.jpg);background-repeat:no-repeat;background-size: 100% 100%">
 <div class="figure">
-    <img src="img/logo.svg" style="background-color: #ffffff"/>
+    <img src="img/logo.jpg" style="background-color: #ffffff"/>
     <div class="main" style="box-sizing: content-box;">
         <div class="head">
             <h1>勤创报名表</h1>
@@ -125,36 +127,41 @@
                 <label style="display: inline-block;" for="xxx"><input class="icheck" type="checkbox" name="adventange" value="male" id="xxx">&nbsp;视频制作剪辑</label><br>
                 <label style="display: inline-block;" for="xxx"><input class="icheck" type="checkbox" name="adventange" value="male" id="xxx">&nbsp;Photoshop运用</label><br>
                 <label style="display: inline-block;" for="xxx"><input class="icheck" type="checkbox" name="adventange" value="male" id="xxx">&nbsp;其他</label>
-                <input type="text" style="background:#d5c395;border:solid #EFE1C4;border-width:0 0 1px 0;">
+                <input type="text" style="background:#ecf0f4;border:solid #EFE1C4;border-width:0 0 1px 0;">
             </div><br>
             <div class="wrapper"style="text-align:left;margin-top: 0">
                 <label style="display: inline-block;" for="xxx">团队领导能力</label><br>
                 <div class="input_form">
-                    <input type="range" min="1" max="5" step="1" id="leader">
+                    <input type="range" min="1" max="5" step="1" id="leader" value="1">
+                    <input type='text' id='leader-result'  class="numberbox" placeholder="0" readonly/>
                 </div>
             </div>
             <div class="wrapper"style="text-align:left;margin-top: 0">
                 <label style="display: inline-block;" for="xxx">沟通交流能力</label><br>
                 <div class="input_form">
-                    <input type="range" min="1" max="5" step="1" id="comunication">
+                    <input type="range" min="1" max="5" step="1" id="communication" value="1">
+                    <input type='text' id='communication-result' style="color:#ecf0f4" class="numberbox" placeholder="0" readonly/>
                 </div>
             </div>
             <div class="wrapper"style="text-align:left;margin-top: 0">
                 <label style="display: inline-block;" for="xxx">创新思维能力</label><br>
                 <div class="input_form">
-                    <input type="range" min="1" max="5" step="1" id="original">
+                    <input type="range" min="1" max="5" step="1" id="create" value="1">
+                    <input type='text' id='create-result'  class="numberbox" placeholder="0" readonly/>
                 </div>
             </div>
             <div class="wrapper"style="text-align:left;margin-top: 0">
                 <label style="display: inline-block;" for="xxx">寻求帮助能力</label><br>
                 <div class="input_form">
-                    <input type="range" min="1" max="5" step="1" id="seek help">
+                    <input type="range" min="1" max="5" step="1" id="help" value="1">
+                    <input type='text' id='help-result'  class="numberbox" placeholder="0" readonly/>
                 </div>
             </div>
             <div class="wrapper"style="text-align:left;margin-top: 0">
                 <label style="display: inline-block;" for="xxx">任务执行能力</label><br>
                 <div class="input_form">
-                    <input type="range" min="1" max="5" step="1" id="ability">
+                    <input type="range" min="1" max="5" step="1" id="task" value="1">
+                    <input type='text' id='task-result'  class="numberbox" placeholder="0" readonly/>
                 </div>
             </div>
             <div class="wrapper" style="text-align: left;margin-top: 0">
